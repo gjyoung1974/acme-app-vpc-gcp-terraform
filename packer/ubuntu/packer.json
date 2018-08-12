@@ -6,10 +6,10 @@
     {
       "type": "googlecompute",
       "account_file": "{{user `gcloud_account_json`}}",
-      "project_id": "{{env `GOOGLE_PROJECT`}}",
+      "project_id": "acme-212321",
       "ssh_username": "gjyoung1974",
       "source_image": "ubuntu-1804-bionic-v20180723",
-      "zone": "{{env `GOOGLE_ZONE`}}",
+      "zone": "us-west2-a",
       "image_name": "acme-ubuntu-1804-bionic-base-{{timestamp}}",
       "image_description":"acme-hardened-ubuntu-1804-bionic-base{{timestamp}}",
       "machine_type": "f1-micro"
