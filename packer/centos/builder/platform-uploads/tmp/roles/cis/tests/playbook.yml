@@ -1,0 +1,10 @@
+# Standards: 0.11
+---
+
+- hosts: localhost
+  connection: local
+  become: yes
+
+  roles:
+    - cis-fedora28-linux
+ 

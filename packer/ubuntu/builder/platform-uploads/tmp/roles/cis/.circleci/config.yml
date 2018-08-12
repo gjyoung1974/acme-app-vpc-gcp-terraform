@@ -1,0 +1,20 @@
+version: 2
+executorType: machine
+dependencies:
+jobs:
+  build:
+    working_directory: ~/verygood.cis
+    machine:
+      image: circleci/classic:edge
+    steps:
+      - checkout
+      - run: sudo apt-add-repository -y ppa:ansible/ansible
+      - run: sudo apt-get update
+      - run: sudo apt-get install -y ansible
+      - run: sudo pip install ansible-lint
+      - run: ansible-lint --version
+      # Ansible YAML syntax-check
+      # - run: ansible-playbook --syntax-check playbook.yml
+      # Ansible-lint check
+      # https://github.com/willthames/ansible-lint
+      - run: ansible-lint -v ~/verygood.cis/*/*.yml

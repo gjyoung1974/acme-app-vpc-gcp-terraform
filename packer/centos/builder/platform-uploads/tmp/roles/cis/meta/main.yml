@@ -1,0 +1,14 @@
+# Standards: 1.1.25
+
+galaxy_info:
+  author: Gordon Young Courtney
+  description: Idempotent CIS Benchmarks for RHEL/CentOS Linux V2
+  company: Very Good Security
+  license: Apache
+  min_ansible_version: 2.0
+  platforms:
+  - name: EL
+    versions:
+    - "7"
+  galaxy_tags: ['CIS','Linux','RHEL','EL','CentOS','Fedora','hardening','benchmark','PCIDSS','compliance', 'idempotent']
+dependencies: []
